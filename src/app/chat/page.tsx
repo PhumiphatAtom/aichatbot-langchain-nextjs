@@ -62,7 +62,7 @@ export default function Chat() {
     });
 
     return () => subscription.unsubscribe();
-  }, []);
+  }, [user]);
 
   return (
     <div className="flex flex-col h-screen bg-gray-100">
