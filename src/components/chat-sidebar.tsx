@@ -12,6 +12,7 @@ import {
   SidebarMenuButton,
   useSidebar,
 } from "@/components/ui/sidebar";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 import {
   Popover,
   PopoverContent,
@@ -341,6 +342,7 @@ export function ChatSidebar({ display_name, email }: ChatSidebarProps) {
         </div>
         <div className="flex items-center gap-1 group-data-[collapsible=icon]:hidden">
           {/* Place button Theme toggle here */}
+          <ThemeToggle />
 
           <Button variant="ghost" className="size-8">
             <Search className="size-4" />
